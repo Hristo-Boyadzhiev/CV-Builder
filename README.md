@@ -42,9 +42,7 @@ This project uses several libraries that are licensed under the MIT License, inc
 
 **Apache License 2.0** permits users to use, modify, and distribute the software, but it requires that you include a copy of the license in any distribution and provide notice of any modifications made to the original code.
 
-**SIL Open Font License, Version 1.1** allows for the use, study, modification, and redistribution of the font software freely, as long as it is not sold by itself. The fonts can be bundled, embedded, and redistributed with software, provided that the copyright notice and this license are included. 
-
-For full details, refer to the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/).
+**SIL Open Font License, Version 1.1** allows for the use, study, modification, and redistribution of the font software freely, as long as it is not sold by itself. The fonts can be bundled, embedded, and redistributed with software, provided that the copyright notice and this license are included. For full details, refer to the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/).
 
 ## Installation and Usage
 ### Step 1: Clone the repository to your local machine:
