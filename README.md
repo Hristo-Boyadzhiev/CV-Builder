@@ -29,9 +29,6 @@ This app is under developing.
 - Bootstrap: A CSS framework for responsive web design. It is used under the MIT License. You can find it [here](https://github.com/twbs/bootstrap/blob/main/LICENSE).
 
 ### Fonts
-- Oswald: This project uses the Oswald font, which is licensed under the Apache License 2.0. You can find it [here](https://openfontlicense.org/open-font-license-official-text/).
-
-### Fonts
 - Oswald: This project uses the Oswald font, which is licensed under the [SIL Open Font License, Version 1.1](https://openfontlicense.org/open-font-license-official-text/). You can learn more about the Oswald font and its license on [License](https://fonts.google.com/specimen/Oswald/license).
 
 ### Approaches & Techniques
