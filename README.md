@@ -26,13 +26,14 @@ This app is under developing.
 
 ### Libraries
 - React: A JavaScript library for building user interfaces. It is used under the MIT License. You can find it [here](https://github.com/facebook/react/blob/main/LICENSE).
+- Bootstrap: A CSS framework for responsive web design. It is used under the MIT License. You can find it [here](https://github.com/twbs/bootstrap/blob/main/LICENSE).
 
 ### Approaches & Techniques
 - Semantic HTML;
 - CSS Modules.
 
 ## License
-This project uses several libraries that are licensed under the MIT License, including Vite, React. TypeScript is licensed under the Apache License 2.0.
+This project uses several libraries that are licensed under the MIT License, including Vite, React and Bootstrap. TypeScript is licensed under the Apache License 2.0.
 
 MIT License allows for free use, modification, and distribution of the code, as long as the original license text and copyright notice are included in all copies or substantial portions of the software.
 
