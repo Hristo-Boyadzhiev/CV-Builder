@@ -1,3 +1,4 @@
+import CVContent from "../../CVContent/CVContent";
 import Modal from "../Modal/Modal";
 import styles from "./Button.module.css";
 
@@ -24,7 +25,11 @@ export default function Button({
         {content}
       </button>
 
-      {isOpenModal && <Modal typeModal={"modal-dialog-centered"} />}
+      {isOpenModal && (
+        <Modal type={"modal-dialog-centered"}>
+          <CVContent />
+        </Modal>
+      )}
     </>
   );
 }
