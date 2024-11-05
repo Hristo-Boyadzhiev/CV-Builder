@@ -1,4 +1,5 @@
 import styles from "./CVBuilder.module.css";
+import Button from "./shared/Button/Button";
 
 export default function CVBuilder() {
   return (
@@ -11,6 +12,11 @@ export default function CVBuilder() {
           Enter your details and choose from the ready-made templates.
         </h3>
       </header>
+      <Button
+        content="Get Started"
+        isOpenModal={true}
+        className={`${styles["fade-in"]}`}
+      />
     </section>
   );
 }

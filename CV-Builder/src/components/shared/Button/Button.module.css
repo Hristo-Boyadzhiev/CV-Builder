@@ -1,0 +1,11 @@
+.customize-button.btn-black {
+    color: black;
+    border-color: black;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.customize-button.btn-black:hover {
+    background-color: black;
+    color: white;
+}

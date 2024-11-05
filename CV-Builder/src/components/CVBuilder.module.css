@@ -2,8 +2,10 @@
 
 .app-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2em;
     min-height: 100vh;
     background-color: #f8f9fa;
     font-family: 'Oswald';
@@ -19,7 +21,6 @@
     transform: translateX(-20px); 
     animation: fadeIn 1.5s forwards; 
 }
-
 
 @keyframes fadeIn {
     0% {
