@@ -27,6 +27,7 @@ This app is under developing.
 ### Libraries
 - React: A JavaScript library for building user interfaces. It is used under the MIT License. You can find it [here](https://github.com/facebook/react/blob/main/LICENSE).
 - Bootstrap: A CSS framework for responsive web design. It is used under the MIT License. You can find it [here](https://github.com/twbs/bootstrap/blob/main/LICENSE).
+- React-hook-form: A library for managing forms in React. It is used under the MIT License. You can find it [here](https://github.com/react-hook-form/react-hook-form/blob/master/LICENSE).
 
 ### Fonts
 - Oswald: This project uses the Oswald font, which is licensed under the [SIL Open Font License, Version 1.1](https://openfontlicense.org/open-font-license-official-text/). You can learn more about the Oswald font and its license on [License](https://fonts.google.com/specimen/Oswald/license).
@@ -36,7 +37,7 @@ This app is under developing.
 - CSS Modules.
 
 ## License
-This project uses several libraries that are licensed under the MIT License, including Vite, React and Bootstrap. TypeScript is licensed under the Apache License 2.0. Oswald font is licensed under SIL Open Font License, Version 1.1.
+This project uses several libraries that are licensed under the MIT License, including Vite, React,Bootstrap and React-hook-form. TypeScript is licensed under the Apache License 2.0. Oswald font is licensed under SIL Open Font License, Version 1.1.
 
 **MIT License** allows for free use, modification, and distribution of the code, as long as the original license text and copyright notice are included in all copies or substantial portions of the software.
 
