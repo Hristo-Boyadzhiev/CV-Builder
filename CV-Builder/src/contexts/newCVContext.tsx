@@ -19,6 +19,7 @@ export const NewCVContextProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [currentStep, setCurrentStep] = React.useState(1);
+  //for manually manage Modal
   const [isModalOpen, setIsModalOpen] = React.useState(false);
 
   const onSubmit: SubmitHandler<any> = (data) => {
