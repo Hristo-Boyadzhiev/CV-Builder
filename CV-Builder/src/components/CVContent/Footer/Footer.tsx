@@ -14,7 +14,7 @@ export default function Footer() {
         type="submit"
         className={`btn btn-outline-secondary ${styles["customize-button"]} ${styles["btn-black"]}`}
       >
-        Save changes
+        Next
       </button>
     </>
   );

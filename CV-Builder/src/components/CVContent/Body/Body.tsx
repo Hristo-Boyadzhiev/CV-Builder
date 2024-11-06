@@ -12,15 +12,6 @@ export default function Body() {
       <CheckField fieldName="Achievements" />
       <CheckField fieldName="Work" />
       <CheckField fieldName="Education" />
-      {/* <Image />
-      <Header />
-      <Skills />
-      <Languages />
-      <Certificates />
-      <Projects />
-      <Achievements />
-      <Work />
-      <Education /> */}
     </>
   );
 }
