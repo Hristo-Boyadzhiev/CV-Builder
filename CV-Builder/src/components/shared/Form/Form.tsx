@@ -16,7 +16,7 @@ export default function Form({ children }: FormProps) {
 
   const handleFormSubmit: SubmitHandler<any> = (data, event) => {
     onSubmit(data, event);
-    methods.reset();
+    // methods.reset();
     // onCloseDialog();
   };
 

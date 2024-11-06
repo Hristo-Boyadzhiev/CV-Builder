@@ -9,6 +9,8 @@ interface newCVContextType {
   isModalOpen: boolean;
   openModal: () => void;
   closeModal: () => void;
+  activeSteps: string[];
+  formsData: { [key: string]: any };
 }
 
 export const newCVContext = createContext<newCVContextType | undefined>(
@@ -19,11 +21,17 @@ export const NewCVContextProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [currentStep, setCurrentStep] = React.useState(1);
-  //for manually manage Modal
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [isModalOpen, setIsModalOpen] = React.useState(false); //for manually manage Modal
+  const [activeSteps, setActiveSteps] = React.useState<string[]>([]);
+  const [formsData, setFormsData] = React.useState({});
 
   const onSubmit: SubmitHandler<any> = (data) => {
+    if (currentStep === 1) {
+      const selectedSteps = Object.keys(data).filter((field) => data[field]);
+      setActiveSteps(selectedSteps);
+    }
     console.log(data);
+    setFormsData(data);
     setCurrentStep((prev) => prev + 1);
   };
 
@@ -36,6 +44,7 @@ export const NewCVContextProvider: React.FC<{ children: ReactNode }> = ({
   const closeModal = () => {
     setCurrentStep(1);
     setIsModalOpen(false);
+    setFormsData({});
     // Reset other states if needed
   };
 
@@ -49,6 +58,8 @@ export const NewCVContextProvider: React.FC<{ children: ReactNode }> = ({
         isModalOpen,
         openModal,
         closeModal,
+        activeSteps,
+        formsData,
       }}
     >
       {children}
