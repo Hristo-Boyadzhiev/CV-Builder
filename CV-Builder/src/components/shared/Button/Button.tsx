@@ -1,34 +1,33 @@
-import CVContent from "../../CVContent/CVContent";
+import React from "react";
 import Modal from "../Modal/Modal";
 import styles from "./Button.module.css";
+import { useNewCVContext } from "../../../hooks/useNewCVContext";
 
 interface ButtonProps {
-  content: string;
+  title: string;
+  modalContent?: React.ReactNode;
   className?: string;
-  isOpenModal?: boolean;
 }
 
 export default function Button({
-  content,
-  isOpenModal,
+  title,
+  modalContent,
   className,
 }: ButtonProps) {
+  const { openModal } = useNewCVContext();
   return (
     <>
       <button
         type="button"
-        data-bs-toggle={isOpenModal ? "modal" : undefined}
-        data-bs-target={isOpenModal ? "#exampleModal" : undefined}
         className={`btn btn-outline-secondary ${styles["customize-button"]} ${styles["btn-black"]} ${className}`}
         style={{ animationDelay: "2s" }}
+        onClick={openModal}
       >
-        {content}
+        {title}
       </button>
 
-      {isOpenModal && (
-        <Modal type={"modal-dialog-centered"}>
-          <CVContent />
-        </Modal>
+      {modalContent && (
+        <Modal type={"modal-dialog-centered"}>{modalContent}</Modal>
       )}
     </>
   );

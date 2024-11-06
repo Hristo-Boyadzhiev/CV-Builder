@@ -1,6 +1,6 @@
 import CheckField from "../../shared/CheckField/CheckField";
 
-export default function Body() {
+export default function NewCVContent() {
   return (
     <>
       <CheckField fieldName="Image" />
