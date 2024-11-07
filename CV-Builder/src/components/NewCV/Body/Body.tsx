@@ -1,6 +1,7 @@
 import { useNewCVContext } from "../../../hooks/useNewCVContext";
 import Header from "./Header/Header";
 import NewCVContent from "./NewCVContent/FormContent";
+import Skills from "./Skills/Skills";
 
 export default function Body() {
   const { stepName } = useNewCVContext();
@@ -9,13 +10,13 @@ export default function Body() {
       return <NewCVContent />;
     case "image":
       // return <NewDeliveryStep2Form />;
-      return <p>Step 2</p>;
+      return <p>Image form</p>;
     case "header":
       return <Header />;
     case "skills":
-    //   return <NewDeliveryStep4Form  />;
+      return <Skills />;
     case "languages":
-    //   return <NewDeliveryStep5Form />;
+      return;
     case "certificates":
       return;
     case "projects":
