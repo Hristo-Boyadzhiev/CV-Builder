@@ -33,8 +33,7 @@ This app is under developing.
 - Oswald: This project uses the Oswald font, which is licensed under the [SIL Open Font License, Version 1.1](https://openfontlicense.org/open-font-license-official-text/). You can learn more about the Oswald font and its license on [License](https://fonts.google.com/specimen/Oswald/license).
 
 ### Approaches & Techniques
-- Semantic HTML;
-- CSS Modules.
+- CSS Modules
 
 ## License
 This project uses several libraries that are licensed under the MIT License, including Vite, React,Bootstrap and React-hook-form. TypeScript is licensed under the Apache License 2.0. Oswald font is licensed under SIL Open Font License, Version 1.1.
