@@ -11,6 +11,7 @@ interface newCVContextType {
   closeModal: () => void;
   activeSteps: string[];
   formsData: { [key: string]: any };
+  setFormsData: React.Dispatch<React.SetStateAction<{ [key: string]: any }>>;
   stepName: string;
   setStepName: React.Dispatch<React.SetStateAction<string>>;
 }
@@ -78,6 +79,7 @@ export const NewCVContextProvider: React.FC<{ children: ReactNode }> = ({
         closeModal,
         activeSteps,
         formsData,
+        setFormsData,
         stepName,
         setStepName,
       }}

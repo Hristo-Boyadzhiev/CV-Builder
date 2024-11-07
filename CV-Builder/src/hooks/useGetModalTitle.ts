@@ -7,23 +7,23 @@ export default function useGetModalTitle() {
     case "newCvContent":
       return "CvContent";
     case "image":
-      return "image";
+      return "Image";
     case "header":
-      return "header";
+      return "Header";
     case "skills":
-      return "skills";
+      return "Skills";
     case "languages":
       return "languages";
-    case "certificates":
+    case "Certificates":
       return "certificates";
-    case "projects":
+    case "Projects":
       return "projects";
     case "achievements":
-      return "achievements";
+      return "Achievements";
     case "work":
-      return "work";
+      return "Work";
     case "education":
-      return "education";
+      return "Education";
     default:
       return null;
   }

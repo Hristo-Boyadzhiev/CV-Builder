@@ -1,5 +1,6 @@
 import { useNewCVContext } from "../../../hooks/useNewCVContext";
 import Header from "./Header/Header";
+import Languages from "./Languages/Languages";
 import NewCVContent from "./NewCVContent/FormContent";
 import Skills from "./Skills/Skills";
 
@@ -16,7 +17,7 @@ export default function Body() {
     case "skills":
       return <Skills />;
     case "languages":
-      return;
+      return <Languages />;
     case "certificates":
       return;
     case "projects":
