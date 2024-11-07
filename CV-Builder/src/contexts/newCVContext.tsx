@@ -48,6 +48,8 @@ export const NewCVContextProvider: React.FC<{ children: ReactNode }> = ({
     // Reset other states if needed
   };
 
+  console.log(activeSteps);
+
   return (
     <newCVContext.Provider
       value={{

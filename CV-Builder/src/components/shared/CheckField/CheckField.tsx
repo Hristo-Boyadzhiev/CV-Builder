@@ -12,7 +12,7 @@ export default function CheckField({ fieldName }: CheckFieldProps) {
   return (
     <Controller
       name={fieldNameLowerCase}
-      defaultValue={formsData[fieldNameLowerCase] || undefined}
+      defaultValue={formsData[fieldNameLowerCase] || false}
       control={control}
       render={({ field }) => (
         <div className="form-check form-switch">
