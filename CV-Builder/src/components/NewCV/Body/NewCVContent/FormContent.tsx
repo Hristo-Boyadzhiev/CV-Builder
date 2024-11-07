@@ -1,4 +1,4 @@
-import CheckField from "../../shared/CheckField/CheckField";
+import CheckField from "../../../shared/CheckField/CheckField";
 
 export default function NewCVContent() {
   return (
