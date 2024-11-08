@@ -1,6 +1,6 @@
 import { useFormContext } from "react-hook-form";
 import { useNewCVContext } from "../../../hooks/useNewCVContext";
-import styles from "../../shared/Button/Button.module.css";
+import styles from "../../shared/css/button.module.css";
 import React from "react";
 import areFilledFields from "../../../utils/areFilledFields";
 

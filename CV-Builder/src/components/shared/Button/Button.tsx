@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from "../Modal/Modal";
-import styles from "./Button.module.css";
+import styles from "../css/button.module.css";
 import { useNewCVContext } from "../../../hooks/useNewCVContext";
 
 interface ButtonProps {
