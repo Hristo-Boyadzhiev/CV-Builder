@@ -6,7 +6,7 @@ import TextareaField from "../../../shared/TextareaField/TextareaField";
 import DateOfBirth from "./DateOfBirth/DateOfBirth";
 import MainContact from "./MainContact/MainContact";
 import SocialContact from "./SocialContact/SocialContact";
-import styles from "./Header.module.css";
+import styles from "../../../shared/css/sectionContainer.module.css";
 
 export default function Header() {
   const { watch, setValue } = useFormContext();
@@ -44,7 +44,7 @@ export default function Header() {
   ]);
 
   return (
-    <section className={styles["header-container"]}>
+    <section className={styles["section-container"]}>
       <Accordion title="Select header fields">
         <CheckField fieldName="Summary" />
         <CheckField fieldName="Date of birth" />
