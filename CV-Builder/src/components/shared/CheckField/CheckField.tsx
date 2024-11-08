@@ -13,6 +13,12 @@ export default function CheckField({ fieldName }: CheckFieldProps) {
   const fieldNameCamelCase = getFieldNameCamelCase(fieldName);
 
   const headerChecked = watch("header");
+  const imageChecked = watch("image");
+
+  //add all from FromContent component checkField
+  // Когато чекнем и отчекнем някой да може да се занулят съдържащите се в чека полета
+  // Например ако чек и отчек Header, Но нещо в полетата в Header, например summary съм попълнил нещо
+  // Да се занули
 
   React.useEffect(() => {
     if (!headerChecked) {
@@ -30,7 +36,11 @@ export default function CheckField({ fieldName }: CheckFieldProps) {
       setValue("website", "");
       setValue("gitHub", "");
     }
-  }, [headerChecked]);
+
+    if (!imageChecked) {
+      setValue("upload-image", "");
+    }
+  }, [headerChecked, imageChecked]); //да не забравям да ги добавям
 
   return (
     <Controller
